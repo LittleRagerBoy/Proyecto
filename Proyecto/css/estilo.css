@@ -1,0 +1,128 @@
+#DatosPersonales{
+    width: 100%;
+    text-align: center;
+}
+
+.order_list{
+    list-style-position: inside;
+    padding: 0;
+}
+
+.unorder_list{
+    list-style-position: inside;
+    padding: 0;
+}
+
+#Horario{
+
+width: 50%;
+height: 350px;
+float: left;
+text-align: center;
+background: linear-gradient(0deg, #FFD1DC 0%, #fb18f4 46%, #bd289d 87%);
+opacity: 0.8;
+}
+
+#Contactos{
+
+width: 50%;
+height: 350px;
+float: right;
+text-align: center;
+background: linear-gradient(0deg, #A2CADF 0%, #1400a8 46%, #080047 84%);
+opacity: 0.8;
+}
+
+#Enlaces{
+
+width: 100%;
+height: 350px;
+clear: both;    
+text-align: center;
+}
+
+#Boton1{
+
+    background-color: rgb(165, 18, 80);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px
+}
+
+#Boton1:hover{
+
+    background: linear-gradient(0deg, #af3ad9 0%, #9012d3 46%, #5e008a 87%);
+}
+
+#Boton2{
+
+    background-color: rgb(39, 21, 204);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px
+
+}
+
+#Boton2:hover{
+
+    background: linear-gradient(0deg, #5e5bfb 0%, #070132 100%);
+
+}
+
+#Boton3{
+
+    background-color: rgb(132, 14, 201);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px
+
+}
+
+#Boton3:hover{
+
+    background: linear-gradient(0deg, #00380e 8%, #ffffff 37%, #000000 94%);
+
+}
+
+#Boton4{
+
+    background-color: rgb(24, 154, 187);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px
+
+}
+
+#Boton5{
+
+    background-color: rgb(218, 10, 72);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px
+
+}
+
+#Boton5:hover{
+
+    background: linear-gradient(0deg, rgb(218, 10, 72) 26%, #ffffff 67%);
+}
+
+#Boton4:hover{
+
+    background: linear-gradient(0deg, rgb(24, 154, 187) 26%, #ffffff 99%);
+}
