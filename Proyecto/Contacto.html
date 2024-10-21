@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body style="background-color: #EA899A;">
+
+<h2 style="color:#3E5F8A;"><u><i>Datos Personales a rellenar</u></i></h2><hr>
+<br>
+    <form>
+
+        <!--Casillas para el nombre, los apellidos y el número de teléfono-->
+
+        <h3 style="color:#3E5F8A;"><u><i><label for="Formación">Nombre</label></u></i></h3>
+        <input type="text" id="Formación" name="Curso" value="Raúl" required>
+        
+        <h3 style="color:#3E5F8A;"><u><i><label for="Apellidos">Apellidos</label></u></i></h3>
+        <input type="text" id="Apellidos" name="Información" value="Garzón Pérez" required>
+
+        <h3 style="color: #3E5F8A;"><u><i><label for="Teléfono">Teléfono de contacto</label></i></u></h3>
+        <input type="text" id="Teléfono" name="Contacto" value="+34 642-45-75-76" required maxlength="16">
+
+        <h3 style="color: #3E5F8A;"><u><i><label for="Contraseña">Contraseña</label></i></u></h3>
+        <input type="password" id="Contraseña" name="Contraseña" required>
+        <hr><br>
+
+
+        <!--Lista despegable para las ciudades-->
+        <h3 style="color:#3E5F8A;"><u><i>Ciudad en la que se reside</u></i></h3>
+        <select name="select">
+            <option value="Ciudad1" selected>Jaén</option>
+            <option value="Ciudad2">Córdoba</option>
+            <option value="Ciudad3">Málaga</option> 
+            <option value="Ciudad4">Sevilla</option>
+            <option value="Ciudad5">Almería</option>
+        </select> 
+        <hr><br>
+
+
+        <!--Casilla de verificación-->
+        <h3 style="color:#3E5F8A;"><u><i>Preferencias</u></i></h3>
+        <form>
+            <input type="checkbox" id="elem1" name="elem1" value="Billie Ellish">
+            <label for="elem1" style="font-weight: bold;"> Pop</label><br>
+            <input type="checkbox" id="elen2" name="elem2" value="ACDC" checked="true">
+            <label for="elem2" style="font-weight: bold;"> Rock</label>
+            <input type="checkbox" id="elem3" name="elem3" value="Kenshi Yonezu">
+            <label for="checkbox" style="font-weight: bold;"> J-Pop</label><br>
+            <input type="checkbox" id="elem4" name="elem4" value="GameChops">
+            <label for="elem4" style="font-weight: bold;">Chill</label><br>
+            <input type="checkbox" id="elem5" name="elem5" value="Anime">
+            <label for="elem5" style="font-weight: bold;">Bradio</label><br>
+
+            <hr>
+
+        </form>
+
+        <!--Botón de acción-->
+
+        <h3 style="color:#3E5F8A;"><u><i>Enviar formulario</u></i></h3>
+        <button type="button" onclick="alert('Gracias por rellenar el formulario')">Completar formulario</button><br>
+
+        <hr>
+
+    </form>
+
+    <h2><u><i><---Volver atrás</u></i></h2>
+        <a id="Boton5" href="index.html"><u><i>Currículum</u></i></a>
+    
+</body>
+</html>
