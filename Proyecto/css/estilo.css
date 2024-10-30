@@ -126,3 +126,10 @@ text-align: center;
 
     background: linear-gradient(0deg, rgb(24, 154, 187) 26%, #ffffff 99%);
 }
+
+#Tabla{
+    border-radius: 10px;
+    border-color: #00380e;
+    text-align: center;
+
+}
