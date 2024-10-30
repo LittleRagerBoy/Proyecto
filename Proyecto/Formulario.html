@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body style="background-color: #EA899A;">
+
+<h2 style="color:#3E5F8A;"><u><i>Formulario a rellenar</u></i></h2><hr>
+<br>
+    <form action="proceso.php" method="post">
+
+        <!--Datos personales a rellenar (botoón para elegir género)-->
+        <fieldset>
+        <legend style="color: #2b324a;"><b><i><u>Datos a rellenar</u></i></b></legend>
+        <p style="color: #04114c;"><i><label for="Formación">Nombre</label></i></p>
+        <input type="text" id="Formación" name="Curso" value="Raúl" required>
+        
+        <p style="color:#04114c;"><i><label for="Apellidos">Apellidos</label></i></p>
+        <input type="text" id="Apellidos" name="Información" value="Garzón Pérez" required>
+
+        <p style="color: #04114c;"><i><label for="Años">Edad</label></i></p>
+        <input type="number" id="Teléfono" name="Contacto" value="18" required maxlength="2">
+
+        <p style="color: #04114c;"><i><label for="Género">Género</label></i></p>
+        <input type="radio" name="sexo" value="h" >Hombre
+        <input type="radio" name="sexo" value="m">Mujer
+        </fieldset>
+        <br>
+
+
+        <!--Datos de contacto (lista desplegable, type text="password")-->
+        <fieldset>
+        <legend style="color:#2b324a;"><u><i><b>Ciudad en la que se reside</u></i></b></legend>
+        
+        <p style="color: #04114c;"><i><label for="Correo">Correo electrónico</label></i></p>
+        <input type="text" name="Correo" required>
+        
+        <p style="color: #04114c;"><i><label for="Codigo">Código postal</label></i></p>
+        <input type="text" name="Codigo" required>
+        
+        <p style="color: #04114c;"><i><label for="Dirección">Dirección</label></i></p>
+        <input type="text" name="Dirección">
+        
+        <p style="color: #04114c;"><i><label for="Ciudad">Ciudad</label></i></p>
+        <select name="select">
+            <option value="Ciudad1" selected>Jaén</option>
+            <option value="Ciudad2">Córdoba</option>
+            <option value="Ciudad3">Málaga</option> 
+            <option value="Ciudad4">Sevilla</option>
+            <option value="Ciudad5">Almería</option>
+        </select>
+        
+        <p style="color: #04114c;"><i><label for="Contraseña">Contraseña</label></i></p>
+        <input type="password" id="Contraseña" name="Contraseña" required>
+        </fieldset>
+        <br>
+
+        <!--Datos de ínteres (casilla de verificación, checked="true")-->
+        <fieldset>
+        <legend style="color:#2b324a;"><b><i><u>Datos de Interés</u></i></b></legend>
+        
+        <p style="color: #04114c;"><i><label for="Estado">Estado Civil</label></i></p>
+        <input type="radio" name="estado" value="h">Casado
+        <input type="radio" name="estado" value="m">No casado
+        <br>
+
+        <p style="color: #04114c;"><i><label for="Hobbies">Hobbies</label></i></p>
+        
+            <input type="checkbox" id="elem1" name="elem1" value="Deporte">
+            <label for="elem1" style="font-weight: bold;">Deporte</label><br>
+            <input type="checkbox" id="elen2" name="elem2" value="Cine" checked="true">
+            <label for="elem2" style="font-weight: bold;">Cine</label>
+            <br>
+            <input type="checkbox" id="elem3" name="elem3" value="Lectura">
+            <label for="checkbox" style="font-weight: bold;">Lectura</label><br>
+            <input type="checkbox" id="elem4" name="elem4" value="Correr">
+            <label for="elem4" style="font-weight: bold;">Correr</label><br>
+            <input type="checkbox" id="elem5" name="elem5" value="Videojuegos">
+            <label for="elem5" style="font-weight: bold;">Videojuegos</label><br>
+        </fieldset><br>
+
+            
+        <!--Datos para introducir comentarios (textarea, rows, cols y placeholder)-->
+        <fieldset>
+        <legend style="color: #2b324a;"><b><i><u>Comentarios adicionales</u></i></b></legend>
+            <p>Escribe aquí tus comentarios:</p>
+            <p><textarea name="comentario" rows="4" cols="27" placeholder="Escribe tus comentarios aquí..."></textarea></p>
+        </fieldset>
+
+        <!--Botón de acción (uno de envío y otro para reseetear)-->
+        <h3 style="color:#2b324a;"><u><i>Enviar formulario</u></i></h3>
+        <button type="button" onclick="alert('Gracias por rellenar el formulario')">Completar formulario</button>
+        <input type="submit" value="Enviar"> 
+        <input type="reset" value="Borrar">
+    </form>
+
+    <h2><u><i><---Volver atrás</u></i></h2>
+        <a id="Boton5" href="index.html"><u><i>Currículum</u></i></a>
+        <br><br>
+        <a id="Boton5" href=""><u><i>Enlace a código del formulario</i></u></a>
+
+</body>
+</html>
