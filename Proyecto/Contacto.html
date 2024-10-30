@@ -8,40 +8,58 @@
 </head>
 <body style="background-color: #EA899A;">
 
-<h2 style="color:#3E5F8A;"><u><i>Datos Personales a rellenar</u></i></h2><hr>
+<h2 style="color:#3E5F8A;"><u><i>Formulario a rellenar</u></i></h2><hr>
 <br>
-    <form>
+    <form action="proceso.php" method="post">
 
         <!--Casillas para el nombre, los apellidos y el número de teléfono-->
 
-        <h3 style="color:#3E5F8A;"><u><i><label for="Formación">Nombre</label></u></i></h3>
+        <fieldset>
+        <legend style="color: #2b324a;"><b><i><u>Datos a rellenar</u></i></b></legend>
+        <p style="color: #04114c;"><i><label for="Formación">Nombre</label></i></p>
         <input type="text" id="Formación" name="Curso" value="Raúl" required>
         
-        <h3 style="color:#3E5F8A;"><u><i><label for="Apellidos">Apellidos</label></u></i></h3>
+        <p style="color:#04114c;"><i><label for="Apellidos">Apellidos</label></i></p>
         <input type="text" id="Apellidos" name="Información" value="Garzón Pérez" required>
 
-        <h3 style="color: #3E5F8A;"><u><i><label for="Teléfono">Teléfono de contacto</label></i></u></h3>
-        <input type="text" id="Teléfono" name="Contacto" value="+34 642-45-75-76" required maxlength="16">
+        <p style="color: #04114c;"><i><label for="Años">Edad</label></i></p>
+        <input type="number" id="Teléfono" name="Contacto" value="18" required maxlength="2">
 
-        <h3 style="color: #3E5F8A;"><u><i><label for="Contraseña">Contraseña</label></i></u></h3>
-        <input type="password" id="Contraseña" name="Contraseña" required>
-        <hr><br>
+        <!--<p style="color: #04114c;"><i><label for="Contraseña">Contraseña</label></i></p>
+        <input type="password" id="Contraseña" name="Contraseña" required>-->
+
+        <p style="color: #04114c;"><i><label for="Género">Género</label></i></p>
+        <input type="radio" name="sexo" value="h">Hombre
+        <input type="radio" name="sexo" value="m">Mujer
+        </fieldset>
+        <br>
 
 
         <!--Lista despegable para las ciudades-->
-        <h3 style="color:#3E5F8A;"><u><i>Ciudad en la que se reside</u></i></h3>
+        <fieldset>
+        <legend style="color:#3E5F8A;"><u><i>Ciudad en la que se reside</u></i></legend>
+        <p style="color: #04114c;"><i><label for="Correo">Correo electrónico</label></i></p>
+        <input type="text" name="Correo" required>
+        <p style="color: #04114c;"><i><label for="Codigo"></label></i></p>
+        <input type="text" name="">
         <select name="select">
             <option value="Ciudad1" selected>Jaén</option>
             <option value="Ciudad2">Córdoba</option>
             <option value="Ciudad3">Málaga</option> 
             <option value="Ciudad4">Sevilla</option>
             <option value="Ciudad5">Almería</option>
-        </select> 
-        <hr><br>
+        </select>
+        
+        
+
+        
+        </fieldset>
+        <br>
 
 
         <!--Casilla de verificación-->
-        <h3 style="color:#3E5F8A;"><u><i>Preferencias</u></i></h3>
+        <fieldset>
+        <legend style="color:#3E5F8A;"><b><i><u>Preferencias</u></i></b></legend>
         <form>
             <input type="checkbox" id="elem1" name="elem1" value="Billie Ellish">
             <label for="elem1" style="font-weight: bold;"> Pop</label><br>
@@ -53,17 +71,15 @@
             <label for="elem4" style="font-weight: bold;">Chill</label><br>
             <input type="checkbox" id="elem5" name="elem5" value="Anime">
             <label for="elem5" style="font-weight: bold;">Bradio</label><br>
-
-            <hr>
-
+        </fieldset>
+            
         </form>
 
         <!--Botón de acción-->
 
         <h3 style="color:#3E5F8A;"><u><i>Enviar formulario</u></i></h3>
         <button type="button" onclick="alert('Gracias por rellenar el formulario')">Completar formulario</button><br>
-
-        <hr>
+        <input type="reset" value="Resetear">
 
     </form>
 
